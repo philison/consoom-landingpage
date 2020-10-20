@@ -1,0 +1,46 @@
+:root {
+  --primary-color: #ff6c6c;
+  --secondary-color: #9099a6; }
+
+span {
+  color: var(--primary-color); }
+
+.header-row1 {
+  display: flex;
+  justify-content: space-evenly; }
+  .header-row1 .header-text-div {
+    display: inline-block;
+    width: 500rem;
+    background-color: blue; }
+    .header-row1 .header-text-div .header-h1group {
+      font-size: 20rem; }
+  .header-row1 .header-mockup {
+    position: relative; }
+    .header-row1 .header-mockup .header-iPhone {
+      width: 30rem; }
+    .header-row1 .header-mockup .header-logo-naked {
+      width: 8rem;
+      position: absolute;
+      left: 10rem;
+      top: 20rem; }
+
+.header-tempGraph {
+  width: 100%; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Baloo Chettan 2', cursive;
+  font-weight: 400;
+  background-color: white;
+  color: black;
+  /*prevent scrolling */ }
