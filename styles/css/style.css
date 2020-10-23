@@ -1,31 +1,115 @@
 :root {
   --primary-color: #ff6c6c;
-  --secondary-color: #9099a6; }
+  --secondary-color: #9099a6;
+  --h1-font-size: 3rem;
+  --h2-font-size: 2.5rem;
+  --paragraph-font-size: 2rem; }
 
-span {
-  color: var(--primary-color); }
+h1 {
+  font-size: 3rem; }
 
-.header-row1 {
+h2 {
+  font-size: var(--h2-font-size);
+  font-weight: 700; }
+
+p {
+  text-align: center;
+  font-size: var(--paragraph-font-size);
+  max-width: 80%;
+  padding-top: 2rem; }
+
+.secContent {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly; }
-  .header-row1 .header-text-div {
-    display: inline-block;
-    width: 500rem;
-    background-color: blue; }
-    .header-row1 .header-text-div .header-h1group {
-      font-size: 20rem; }
-  .header-row1 .header-mockup {
-    position: relative; }
-    .header-row1 .header-mockup .header-iPhone {
-      width: 30rem; }
-    .header-row1 .header-mockup .header-logo-naked {
-      width: 8rem;
-      position: absolute;
-      left: 10rem;
-      top: 20rem; }
 
-.header-tempGraph {
-  width: 100%; }
+.textDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 30%;
+  padding-top: 2rem; }
+
+.mockupContainer {
+  position: relative;
+  align-self: flex-end;
+  width: 36rem; }
+
+.iPhone {
+  width: 100%;
+  margin-left: 1.2rem; }
+
+.graphContainer {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden; }
+
+header {
+  width: 100vw;
+  height: 100vh; }
+  header .secContent {
+    height: 100%; }
+    header .secContent .textDiv .header-h1group {
+      width: 80%;
+      line-height: 1.1; }
+      header .secContent .textDiv .header-h1group .header-h1Topic {
+        color: var(--primary-color); }
+        header .secContent .textDiv .header-h1group .header-h1Topic::before {
+          content: 'climat change';
+          animation: topic-switch infinite 6s ease; }
+
+@keyframes topic-switch {
+  0% {
+    content: 'climat change'; }
+  33% {
+    content: 'factory farming'; }
+  66% {
+    content: 'micro plastic'; } }
+    header .secContent .logoNaked {
+      width: 30%;
+      position: absolute;
+      left: 35%;
+      top: 20rem; }
+  header .tempGraph {
+    width: 200%;
+    margin-left: -100%; }
+
+.sec1 {
+  position: relative;
+  background-color: var(--primary-color);
+  color: white;
+  height: 100vh; }
+  .sec1 p {
+    max-width: 90%; }
+  .sec1 .receipt {
+    width: 60%;
+    margin-left: 7.6rem;
+    margin-top: 2rem; }
+  .sec1 .phoneTextWrapper {
+    position: relative;
+    margin-top: -22rem; }
+    .sec1 .phoneTextWrapper .scanText {
+      width: 55%;
+      color: var(--secondary-color);
+      font-size: 2.5rem;
+      font-weight: 500;
+      line-height: 1.2;
+      position: absolute;
+      left: 8rem;
+      top: 10rem; }
+      .sec1 .phoneTextWrapper .scanText span {
+        color: var(--primary-color); }
+  .sec1 .co2Graph {
+    width: 200%;
+    margin-left: 0; }
+
+.sec2 {
+  position: relative;
+  background-color: white;
+  height: 100vh;
+  z-index: 100; }
 
 *,
 *::after,

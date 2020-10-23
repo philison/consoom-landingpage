@@ -1,0 +1,150 @@
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  font-weight: 700;
+}
+
+p {
+  text-align: center;
+  font-size: var(--paragraph-font-size);
+  max-width: 80%;
+  padding-top: 2rem;
+}
+
+.secContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.textDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 30%;
+  padding-top: 2rem;
+}
+
+.mockupContainer {
+  position: relative;
+  align-self: flex-end;
+  width: 36rem;
+}
+
+.iPhone {
+  // watch out for the box Shadow that is included in the svg
+  //box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  margin-left: 1.2rem;
+}
+
+.graphContainer {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  //z-index: 5;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+
+  .secContent {
+    height: 100%;
+    //align-items: center;
+
+    .textDiv {
+      .header-h1group {
+        width: 80%;
+        line-height: 1.1;
+
+        .header-h1Topic {
+          color: var(--primary-color);
+
+          &::before {
+            content: 'climat change';
+            animation: topic-switch infinite 6s ease;
+          }
+
+          @keyframes topic-switch {
+            0% {
+              content: 'climat change';
+            }
+            33% {
+              content: 'factory farming';
+            }
+            66% {
+              content: 'micro plastic';
+            }
+          }
+        }
+      }
+    }
+
+    .logoNaked {
+      width: 30%;
+      position: absolute; //Alternativ: make the .header-mockup div flexbox and iPhone absolute so logo can be easily centered
+      left: 35%;
+      top: 20rem;
+    }
+  }
+
+  .tempGraph {
+    width: 200%;
+    margin-left: -100%;
+  }
+}
+
+.sec1 {
+  position: relative;
+  background-color: var(--primary-color);
+  color: white;
+  height: 100vh;
+
+  p {
+    max-width: 90%;
+  }
+
+  .receipt {
+    width: 60%;
+    margin-left: 7.6rem;
+    margin-top: 2rem;
+  }
+
+  .phoneTextWrapper {
+    position: relative;
+    margin-top: -22rem; //-25 for endposition
+
+    .scanText {
+      width: 55%;
+      color: var(--secondary-color);
+      font-size: 2.5rem;
+      font-weight: 500;
+      line-height: 1.2;
+      position: absolute;
+      left: 8rem;
+      top: 10rem;
+
+      span {
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  .co2Graph {
+    width: 200%;
+    margin-left: 0;
+  }
+}
+
+.sec2 {
+  position: relative;
+  background-color: white;
+  height: 100vh;
+  z-index: 100;
+}
