@@ -1,8 +1,8 @@
 :root {
   --primary-color: #ff6c6c;
   --secondary-color: #9099a6;
-  --h1-font-size: 3rem;
-  --h2-font-size: 2.5rem;
+  --h1-font-size: 3.5rem;
+  --h2-font-size: 3rem;
   --paragraph-font-size: 2rem; }
 
 h1 {
@@ -40,47 +40,54 @@ p {
   width: 100%;
   margin-left: 1.2rem; }
 
-.graphContainer {
-  width: 100vw;
+.graph {
   position: absolute;
-  bottom: 0;
+  top: 100vh;
+  transform: translateY(-100%);
   overflow: hidden; }
 
 header {
   width: 100vw;
-  height: 100vh; }
-  header .secContent {
-    height: 100%; }
-    header .secContent .textDiv .header-h1group {
-      width: 80%;
-      line-height: 1.1; }
-      header .secContent .textDiv .header-h1group .header-h1Topic {
-        color: var(--primary-color); }
-        header .secContent .textDiv .header-h1group .header-h1Topic::before {
-          content: 'climat change';
-          animation: topic-switch infinite 6s ease; }
+  height: 100vh;
+  position: relative;
+  overflow: hidden; }
+  header .secContent .textDiv .header-h1group {
+    width: 80%;
+    line-height: 1.1; }
+    header .secContent .textDiv .header-h1group .header-h1Topic {
+      color: var(--primary-color); }
+      header .secContent .textDiv .header-h1group .header-h1Topic::before {
+        content: 'climat change';
+        animation: topic-switch infinite 6s ease; }
 
-@keyframes topic-switch {
+@-webkit-keyframes topic-switch {
   0% {
     content: 'climat change'; }
   33% {
     content: 'factory farming'; }
   66% {
     content: 'micro plastic'; } }
-    header .secContent .logoNaked {
-      width: 30%;
-      position: absolute;
-      left: 35%;
-      top: 20rem; }
+  header .secContent .logoNaked {
+    width: 30%;
+    position: absolute;
+    left: 35%;
+    top: 20rem; }
   header .tempGraph {
     width: 200%;
     margin-left: -100%; }
 
+/*
+width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+*/
 .sec1 {
   position: relative;
   background-color: var(--primary-color);
   color: white;
-  height: 100vh; }
+  height: 100vh;
+  overflow: hidden; }
   .sec1 p {
     max-width: 90%; }
   .sec1 .receipt {
@@ -105,11 +112,65 @@ header {
     width: 200%;
     margin-left: 0; }
 
+.card {
+  margin-top: 5rem;
+  display: flex;
+  width: 100%;
+  border-radius: 3.5rem;
+  background-color: white;
+  box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.06);
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly; }
+  .card .icon {
+    height: 7rem;
+    margin-top: 2.5rem; }
+  .card h2 {
+    color: var(--secondary-color);
+    margin-top: 1.2rem;
+    margin-bottom: 1.1rem; }
+  .card p {
+    padding-top: 0;
+    max-width: 85%;
+    margin-bottom: 2.5rem; }
+
+.spacer {
+  height: 18rem;
+  width: 100%; }
+
 .sec2 {
   position: relative;
   background-color: white;
-  height: 100vh;
   z-index: 100; }
+  .sec2 p {
+    max-width: 85%; }
+  .sec2 .cardsContainer {
+    width: 80%; }
+  .sec2 .skylineGraph {
+    width: 120%;
+    top: 100%; }
+
+.feedbackBox {
+  position: relative;
+  height: 20rem;
+  width: 80%;
+  border-radius: 3.5rem;
+  background-color: white;
+  margin-top: 4rem; }
+  .feedbackBox .feedbackSendBtn {
+    position: absolute;
+    top: 70%;
+    left: 82%;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    border: none; }
+    .feedbackBox .feedbackSendBtn span {
+      padding: 1rem;
+      color: white; }
+
+.sec3 {
+  background-color: var(--primary-color);
+  color: white; }
 
 *,
 *::after,
@@ -127,4 +188,5 @@ body {
   font-weight: 400;
   background-color: white;
   color: black;
+  overflow-x: hidden;
   /*prevent scrolling */ }
