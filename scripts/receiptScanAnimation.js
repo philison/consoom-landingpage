@@ -10,7 +10,7 @@ for (var i = 0; i <= 8; i++) {
 let scanOptions = {
     root: null,
     rootMargin: "0px 0px 0px 0px",
-    threshold: [0.25, 0.5, 0.75, 1.0]
+    threshold: [0.12, 0.25, 0.37, 0.5, 0.62, 0.75, 0.87, 1.0]
   };
 
 let phoneTextWrapper = document.querySelector('.phoneTextWrapper')
@@ -37,7 +37,7 @@ function handleScanIntersect(entries, observer) {
         //console.log(entry.target)
         console.log(intersect)
 
-        phoneTextWrapper.style.transform = `translateY(${(1-intersect)*15}rem)`
+        phoneTextWrapper.style.transform = `translateY(${(1-intersect)*20}rem)`
         
         scanTextLines.forEach((value, index) => {
             if (index < scanTextLines.length*intersect) {

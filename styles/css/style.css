@@ -34,11 +34,11 @@ p {
 .mockupContainer {
   position: relative;
   align-self: flex-end;
-  width: 36rem; }
+  width: 100%; }
 
 .iPhone {
-  width: 100%;
-  margin-left: 1.2rem; }
+  width: 125%;
+  margin-left: -2.3rem; }
 
 .graph {
   position: absolute;
@@ -92,11 +92,11 @@ width: 100vw;
     max-width: 90%; }
   .sec1 .receipt {
     width: 60%;
-    margin-left: 7.6rem;
+    margin-left: 8.45rem;
     margin-top: 2rem; }
   .sec1 .phoneTextWrapper {
     position: relative;
-    margin-top: -22rem; }
+    margin-top: -30rem; }
     .sec1 .phoneTextWrapper .scanText {
       width: 55%;
       color: var(--secondary-color);
@@ -208,8 +208,7 @@ body .fadedIn {
   position: absolute;
   height: 50vh;
   width: 100vw;
-  top: 100vh;
-  transform: translateY(70vh); }
+  top: 180vh; }
 
 .scanTextLine {
   opacity: 0; }

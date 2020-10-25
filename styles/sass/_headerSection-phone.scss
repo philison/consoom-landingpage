@@ -32,14 +32,14 @@ p {
 .mockupContainer {
   position: relative;
   align-self: flex-end;
-  width: 36rem;
+  width: 100%;
 }
 
 .iPhone {
   // watch out for the box Shadow that is included in the svg
   //box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.15);
-  width: 100%;
-  margin-left: 1.2rem;
+  width: 125%;
+  margin-left: -2.3rem;
 }
 
 .graph {
@@ -126,13 +126,13 @@ width: 100vw;
 
   .receipt {
     width: 60%;
-    margin-left: 7.6rem;
+    margin-left: 8.45rem;
     margin-top: 2rem;
   }
 
   .phoneTextWrapper {
     position: relative;
-    margin-top: -22rem; //-25 for endposition
+    margin-top: -30rem; //-25 for endposition
 
     .scanText {
       width: 55%;
@@ -293,8 +293,9 @@ body .fadedIn {
   position: absolute;
   height: 50vh;
   width: 100vw;
-  top: 100vh;
-  transform: translateY(70vh);
+  // push div lower for a delayed intersection
+  top: 180vh;
+  //transform: translateY(70vh);
   //background-color: royalblue;
 }
 
