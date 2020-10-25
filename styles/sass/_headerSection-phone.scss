@@ -213,12 +213,6 @@ width: 100vw;
     width: 120%;
     top: 100%;
   }
-
-  /////////////
-  .fadedIn {
-    opacity: 1;
-    transform: matrix(1, 0, 0, 1, 0, 0);
-  }
 }
 
 .feedbackForm {
@@ -272,4 +266,14 @@ width: 100vw;
   opacity: 0;
   transform: matrix(1, 0, 0, 1, 0, 40);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+body .fadedIn {
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.phonefadeOut {
+  transform: translateY(15rem);
+  transition: transform 0.8s ease-in-out;
 }
