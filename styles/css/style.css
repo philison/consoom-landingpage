@@ -166,7 +166,8 @@ width: 100vw;
     width: 80%; }
   .sec2 .skylineGraph {
     width: 120%;
-    top: 100%; }
+    top: 100%;
+    margin-left: -2rem; }
 
 .feedbackForm {
   width: 80%;
