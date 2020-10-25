@@ -196,7 +196,6 @@ body .fadedIn {
   transform: matrix(1, 0, 0, 1, 0, 0); }
 
 .phonefadeOut {
-  transform: translateY(15rem);
   transition: transform 0.8s ease-in-out; }
 
 *,
