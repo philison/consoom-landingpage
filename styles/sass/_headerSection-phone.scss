@@ -74,6 +74,11 @@ header {
           &::before {
             content: 'climat change';
             animation: topic-switch infinite 6s ease;
+
+            -webkit-animation-name: topic-switch;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: ease;
+            -webkit-animation-duration: 6s;
           }
 
           @-webkit-keyframes topic-switch {
