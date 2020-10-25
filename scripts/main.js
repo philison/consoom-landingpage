@@ -65,5 +65,5 @@ function headingTopicAnimation() {
     let topicAnimateInterval = window.setInterval(() => {
         headingTopic.textContent = topicWords[counter]
         counter>=topicWords.length-1 ? counter = 0 : counter++
-    }, 3000);
+    }, 1500);
 }
