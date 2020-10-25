@@ -106,8 +106,10 @@ width: 100vw;
       position: absolute;
       left: 8rem;
       top: 10rem; }
-      .sec1 .phoneTextWrapper .scanText span {
+      .sec1 .phoneTextWrapper .scanText .redText {
         color: var(--primary-color); }
+      .sec1 .phoneTextWrapper .scanText .textIsScanned {
+        opacity: 1; }
   .sec1 .co2Graph {
     width: 200%;
     margin-left: 0; }
@@ -197,6 +199,20 @@ body .fadedIn {
 
 .phonefadeOut {
   transition: transform 0.8s ease-in-out; }
+
+.scanFadeIn {
+  transition: transform 0.3s ease-in; }
+
+.intersectDiv {
+  display: inline-block;
+  position: absolute;
+  height: 50vh;
+  width: 100vw;
+  top: 100vh;
+  transform: translateY(70vh); }
+
+.scanTextLine {
+  opacity: 0; }
 
 *,
 *::after,

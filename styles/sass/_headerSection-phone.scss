@@ -144,8 +144,12 @@ width: 100vw;
       left: 8rem;
       top: 10rem;
 
-      span {
+      .redText {
         color: var(--primary-color);
+      }
+
+      .textIsScanned {
+        opacity: 1;
       }
     }
   }
@@ -276,4 +280,25 @@ body .fadedIn {
 .phonefadeOut {
   //transform: translateY(15rem);
   transition: transform 0.8s ease-in-out;
+}
+
+// Scan section
+//Phone
+.scanFadeIn {
+  transition: transform 0.3s ease-in;
+}
+
+.intersectDiv {
+  display: inline-block;
+  position: absolute;
+  height: 50vh;
+  width: 100vw;
+  top: 100vh;
+  transform: translateY(70vh);
+  //background-color: royalblue;
+}
+
+//text
+.scanTextLine {
+  opacity: 0;
 }
