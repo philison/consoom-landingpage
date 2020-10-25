@@ -60,7 +60,7 @@ function handleSlideInIntersect(entries, observer) {
 
 
 function headingTopicAnimation() {
-    let counter = 0
+    let counter = 1
     let topicWords = ["climate change", "factory farming", "slavery"]
     let topicAnimateInterval = window.setInterval(() => {
         headingTopic.textContent = topicWords[counter]
