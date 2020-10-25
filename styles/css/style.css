@@ -150,6 +150,9 @@ width: 100vw;
   .sec2 .skylineGraph {
     width: 120%;
     top: 100%; }
+  .sec2 .fadedIn {
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0); }
 
 .feedbackForm {
   width: 80%;
@@ -180,10 +183,12 @@ width: 100vw;
   background-color: var(--primary-color);
   color: white; }
 
+/*
 .fadedIn {
   opacity: 1;
-  transform: matrix(1, 0, 0, 1, 0, 0); }
-
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+*/
 .fadedOut {
   opacity: 0;
   transform: matrix(1, 0, 0, 1, 0, 40);

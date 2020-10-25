@@ -213,6 +213,12 @@ width: 100vw;
     width: 120%;
     top: 100%;
   }
+
+  /////////////
+  .fadedIn {
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
 }
 
 .feedbackForm {
@@ -254,10 +260,12 @@ width: 100vw;
 
 //Intersection Observer API
 //added when in view
+/*
 .fadedIn {
   opacity: 1;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
+*/
 
 //always and in the beginning active
 .fadedOut {
