@@ -117,10 +117,14 @@ width: 100vw;
       color: var(--secondary-color);
       font-size: 2.5rem;
       font-weight: 500;
-      line-height: 1.2;
+      line-height: 1.7;
       position: absolute;
       left: 8rem;
       top: 10rem; }
+      .sec1 .phoneTextWrapper .scanText span {
+        padding: 0rem 1.5rem;
+        border-radius: 2rem;
+        box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.06); }
       .sec1 .phoneTextWrapper .scanText .redText {
         color: var(--primary-color); }
       .sec1 .phoneTextWrapper .scanText .textIsScanned {
@@ -197,6 +201,12 @@ width: 100vw;
   overflow: hidden;
   background-color: var(--primary-color);
   color: white; }
+  .sec3 .textDiv {
+    text-align: center; }
+  .sec3 h2 {
+    width: 80%; }
+  .sec3 p {
+    margin-top: 2rem; }
 
 /*
 .fadedIn {
