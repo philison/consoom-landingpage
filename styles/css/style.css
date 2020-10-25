@@ -152,7 +152,8 @@ width: 100vw;
 
 .feedbackForm {
   width: 80%;
-  position: relative; }
+  position: relative;
+  margin-bottom: 7rem; }
   .feedbackForm .feedbackBox {
     position: relative;
     height: 20rem;
@@ -160,7 +161,8 @@ width: 100vw;
     border-radius: 3.5rem;
     background-color: white;
     margin-top: 4rem;
-    border: none; }
+    border: none;
+    padding-top: 1.5rem; }
   .feedbackForm .feedbackSendBtn {
     position: absolute;
     top: 70%;
@@ -173,8 +175,18 @@ width: 100vw;
       color: white; }
 
 .sec3 {
+  overflow: hidden;
   background-color: var(--primary-color);
   color: white; }
+
+.fadedIn {
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0); }
+
+.fadedOut {
+  opacity: 0;
+  transform: matrix(1, 0, 0, 1, 0, 40);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
 
 *,
 *::after,

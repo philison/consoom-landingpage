@@ -217,6 +217,7 @@ width: 100vw;
 .feedbackForm {
   width: 80%;
   position: relative;
+  margin-bottom: 7rem;
 
   .feedbackBox {
     position: relative;
@@ -226,6 +227,7 @@ width: 100vw;
     background-color: white;
     margin-top: 4rem;
     border: none;
+    padding-top: 1.5rem;
   }
 
   .feedbackSendBtn {
@@ -244,6 +246,21 @@ width: 100vw;
 }
 
 .sec3 {
+  overflow: hidden;
   background-color: var(--primary-color);
   color: white;
+}
+
+//Intersection Observer API
+//added when in view
+.fadedIn {
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+//always and in the beginning active
+.fadedOut {
+  opacity: 0;
+  transform: matrix(1, 0, 0, 1, 0, 40);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
