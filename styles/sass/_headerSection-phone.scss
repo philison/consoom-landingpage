@@ -91,6 +91,10 @@ header {
             66% {
               content: 'micro plastic';
             }
+            100% {
+              color: var(--primary-color);
+              //content: 'micro plastic';
+            }
           }
         }
       }

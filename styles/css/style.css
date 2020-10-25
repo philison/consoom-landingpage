@@ -70,7 +70,9 @@ header {
   33% {
     content: 'factory farming'; }
   66% {
-    content: 'micro plastic'; } }
+    content: 'micro plastic'; }
+  100% {
+    color: var(--primary-color); } }
   header .secContent .logoNaked {
     width: 30%;
     position: absolute;
