@@ -3,6 +3,7 @@ import receiptScanAnimation from "./receiptScanAnimation.js";
 // variables
 let cardElements
 let headeriPhone
+let headingTopic
 
 let slideInOptions = {
     root: null,
@@ -14,10 +15,13 @@ window.addEventListener("load", (event) => {
     cardElements = document.querySelectorAll(".card");
     headeriPhone = document.querySelector(".mockupContainer")
     //headeriPhone = document.getElementById("headeriPhone");
+    headingTopic = document.querySelector(".header-h1Topic")
     
   
     createCardObservers();
     createiPhoneObserver();
+
+    headingTopicAnimation();
     receiptScanAnimation();
   }, false);
 
@@ -54,3 +58,12 @@ function handleSlideInIntersect(entries, observer) {
     });
   }
 
+
+function headingTopicAnimation() {
+    let counter = 0
+    let topicWords = ["climate change", "factory farming", "slavery"]
+    let topicAnimateInterval = window.setInterval(() => {
+        headingTopic.textContent = topicWords[counter]
+        counter>=topicWords.length-1 ? counter = 0 : counter++
+    }, 3000);
+}

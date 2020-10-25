@@ -71,6 +71,7 @@ header {
         .header-h1Topic {
           color: var(--primary-color);
 
+          /*
           &::before {
             content: 'climat change';
             animation: topic-switch infinite 6s ease;
@@ -95,7 +96,7 @@ header {
               color: var(--primary-color);
               //content: 'micro plastic';
             }
-          }
+          }*/
         }
       }
     }

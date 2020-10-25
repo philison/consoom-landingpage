@@ -55,24 +55,33 @@ header {
     width: 80%;
     line-height: 1.1; }
     header .secContent .textDiv .header-h1group .header-h1Topic {
-      color: var(--primary-color); }
-      header .secContent .textDiv .header-h1group .header-h1Topic::before {
-        content: 'climat change';
-        animation: topic-switch infinite 6s ease;
-        -webkit-animation-name: topic-switch;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-timing-function: ease;
-        -webkit-animation-duration: 6s; }
+      color: var(--primary-color);
+      /*
+          &::before {
+            content: 'climat change';
+            animation: topic-switch infinite 6s ease;
 
-@-webkit-keyframes topic-switch {
-  0% {
-    content: 'climat change'; }
-  33% {
-    content: 'factory farming'; }
-  66% {
-    content: 'micro plastic'; }
-  100% {
-    color: var(--primary-color); } }
+            -webkit-animation-name: topic-switch;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: ease;
+            -webkit-animation-duration: 6s;
+          }
+
+          @-webkit-keyframes topic-switch {
+            0% {
+              content: 'climat change';
+            }
+            33% {
+              content: 'factory farming';
+            }
+            66% {
+              content: 'micro plastic';
+            }
+            100% {
+              color: var(--primary-color);
+              //content: 'micro plastic';
+            }
+          }*/ }
   header .secContent .logoNaked {
     width: 30%;
     position: absolute;
